@@ -1,0 +1,202 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('assets/images/Decorative-elements.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  
+    &__content {
+        position: relative; 
+        max-width: 1000px; 
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .decorative-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto; 
+            z-index: -1; 
+          }
+    }
+  
+
+    h1 {
+      font-size: 5.5rem; 
+      margin: 1rem 0;
+      justify-content: center;
+    }
+  
+    p {
+      margin: 1rem 0;
+    }
+  
+    .theme-switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: auto;
+        margin: 0 auto 2rem; 
+      }
+  
+    .hero__form {
+      display: flex;
+      margin: 1rem 0;
+      width: 500px;
+      border: 1px solid var(--border-divider-color);
+      
+  
+      input[type="email"] {
+        flex-grow: 1;
+        margin-right: -131px; 
+        padding: 0.5rem;
+      }
+  
+      .btn--filled {
+        width: 131px; 
+        border-radius: 5px; 
+        background-color: #2322CF;
+        color: #FFFFFF;
+      }
+    }
+  
+    .hero__image img {
+      margin-top: 2rem;
+      width: 100%; 
+      max-width: 1200px; 
+    }
+  }
+
+  .hero__image {
+    border: 8px solid var(--border-divider-color);
+    border-radius: 16px;
+  }
+  
+
+
+  .hero {
+    // Other styles remain unchanged
+  
+    &__form {
+      display: flex;
+      width: calc(100% - 2px); 
+      padding: 1rem; 
+      border: 1px solid var(--border-divider-color); 
+      border-radius: 5px; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      background-color: #fff; 
+      align-items: center; 
+      gap: 0.5rem; 
+  
+      input[type="email"] {
+        flex-grow: 1;
+        padding: 0.5rem 1rem; 
+        border: none; 
+        margin-right: -1px; 
+        font-size: 1rem; 
+        border-radius: 4px 0 0 4px; 
+      }
+  
+      .btn--filled {
+        padding: 0.5rem 1rem; 
+        font-size: 1rem; 
+        border: none; 
+        border-radius: 0 4px 4px 0; 
+        background-color: var(--default-color); 
+        color: #fff; 
+        font-weight: 500; 
+        white-space: nowrap; 
+      }
+    }
+
+    @media (max-width: 768px) {
+      // Adjusts the hero section for smaller screens
+  
+      &__content {
+        padding: 1rem; 
+      }
+  
+      h1 {
+        font-size: 3rem; 
+      }
+  
+      p {
+        font-size: 1rem; 
+      }
+  
+      .theme-switch {
+        width: 150px; // Adjust switch width
+        margin-bottom: 1rem; 
+      }
+  
+      .hero__form {
+        width: 100%; 
+        flex-direction: column; 
+        input[type="email"], .btn--filled {
+          width: auto; 
+          margin: 0 0 0.5rem 0; 
+        }
+        .btn--filled {
+          width: 100%; 
+        }
+      }
+  
+      .hero__image img {
+        max-width: 100%; 
+      }
+    }
+    .hero-button {
+      width: 300px; 
+      height: 50px;
+      border-radius: 5px; 
+      background-color: var(--default-color); 
+      color: #FFFFFF; 
+      font-size: 24px; 
+      border: none; 
+      padding: 0; 
+      cursor: pointer; 
+      outline: none; 
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      appearance: none; 
+      display: inline-block; 
+      text-align: center; 
+      line-height: 50px; 
+      box-shadow: none;
+      transition: background-color 0.3s ease;
+    }
+    
+  }
+
+
+  .hero-button {
+    width: 500px; 
+    height: 50px;
+    border-radius: 5px; 
+    background-color: var(--default-color); 
+    color: #FFFFFF; 
+    font-size: 24px; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    outline: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    display: inline-block; 
+    text-align: center; 
+    line-height: 50px; 
+    box-shadow: none;
+    transition: background-color 0.3s ease; 
+}
+
+  
